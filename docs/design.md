@@ -4,7 +4,7 @@
 - Standardize roles for install speed
 - Preference will be given to a single OS per role.
 - All VM/Cluster will be optimized for RPIs
-- Tuned each vm to run with least resource requirement.
+- Tune each role/vm/cluster to run with least resource requirement.
 - High availability configuration must for clusters.
 - Adhere to folder structure of oah-vms, oah-cluster and oah-roles
 - Should be easy to get off the island , never get stuck with a framework or provisioning tools
@@ -63,6 +63,8 @@ oah generate-cluster {cluster_name}
 
 oah generate-launcher-plugin {plugin_name}
 
+oah validate {role|vm|cluster} {name}
+
 ### oah config Commands
 
 oah config set-oah-engine {ansible| any_other_oah_engine_name}
@@ -97,11 +99,11 @@ openapphack-xxxx-vm // root folder of VM
   - oah-requirements.yml   
  - host // folder to run the vm on host
   - vagrant // provisioner is set to vagrant
-   - vagrantfile
+    - vagrantfile
   - docker // provisioner is set to docker
-   - dockerfile
+    - dockerfile
   - runc // provisioner is set to runc
-   - runcfile
+    - runcfile
 
 Files :
 

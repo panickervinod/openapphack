@@ -1,10 +1,10 @@
 #!/bin/bash
 
 # Global variables
-OPENAPPHACK_SERVICE="http://wiproopensourcepractice.github.io/openapphack/"
+OPENAPPHACK_SERVICE="http://openapphack.github.io/openapphack/"
 OPENAPPHACK_VERSION="0.0.1"
 #OPENAPPHACK_DIR="${0%/*/*}"
-OPENAPPHACK_DIR="${HOME}/.ove"
+OPENAPPHACK_DIR="${HOME}/.oah"
 
 # Local variables
 openapphack_bin_folder="${OPENAPPHACK_DIR}/bin"

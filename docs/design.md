@@ -63,6 +63,8 @@ oah generate-cluster {cluster_name}
 
 oah generate-launcher-plugin {plugin_name}
 
+oah add-oah-script {script_name}
+
 oah validate {role|vm|cluster} {name}
 
 ### oah config Commands
@@ -103,7 +105,7 @@ openapphack-xxxx-vm // root folder of VM
   - docker // provisioner is set to docker
     - dockerfile
   - runc // provisioner is set to runc
-    - runcfile
+    - makefile
 
 Files :
 
